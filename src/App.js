@@ -1,8 +1,10 @@
+import Navbar from "./components/Navbar/Navbar"
 
-function App() {
+function App() { 
+  
   return (
-    <div className="App">
-      <h1>Mi primer app</h1>
+    <div className="w-full">
+      <Navbar/>
     </div>
   );
 }
