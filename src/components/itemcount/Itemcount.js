@@ -17,9 +17,9 @@ const Itemcount = ({manageCart, stock}) => {
 
   return (
     <div className='flex gap-5'>
-        <button onClick={()=>{handlecount("+")}}>+</button>
-        <div>{count}</div>
         <button onClick={()=>{handlecount("-")}} >-</button>
+        <div>{count}</div>
+        <button onClick={()=>{handlecount("+")}}>+</button>
         <button onClick={()=>{manageCart(count)}}>Añadir al carrito</button>
 
     </div>

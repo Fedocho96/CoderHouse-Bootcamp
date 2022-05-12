@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 /* ------------ Components ---------- */
-import CardContainer from "./components/cardcontainer/CardContainer";
+import ItemListContainer from "./components/itemlistcontainer/ItemListContainer";
 import Navbar from "./components/Navbar/Navbar"
 import Sidebar from "./components/sidebar/Sidebar";
 /* ------------ xxxxxxxxxx ---------- */
@@ -30,7 +30,7 @@ function App() {
         </div>
 
         <div className="col-span-3 mt-10">
-          <CardContainer manageCart={manageCart} stock={stock} />
+          <ItemListContainer manageCart={manageCart} stock={stock} />
         </div>
       </div>
 
