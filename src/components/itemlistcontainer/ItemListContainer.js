@@ -30,7 +30,7 @@ const ItemListContainer = ({manageCart, stock}) => {
   }, [])
 
   return (
-    <div >
+    <div className=' h-full w-screen'>
         <ItemList listaproductos={listaproductos} manageCart={manageCart} stock={stock}/>
     </div>
   )
