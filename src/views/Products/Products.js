@@ -26,7 +26,7 @@ function Products() {
       <Navbar cartCounter={cartCounter}/>
 
       <div className="grid grid-cols-4 max-h-full ">
-        <div className="col-span-1 mt-10">
+        <div className=" col-span-1 mt-10">
            <Sidebar/>
         </div>
 
