@@ -28,7 +28,7 @@ const ItemListContainer = ({manageCart, stock, id}) => {
   }, [id])
 
     return (
-    <div className=' h-full w-screen'>
+    <div className='mr-3'>
         <ItemList listaproductos={listaproductos} manageCart={manageCart} stock={stock}/>
     </div>
   )
