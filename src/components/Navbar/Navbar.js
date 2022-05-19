@@ -1,13 +1,12 @@
+import { NavLink } from 'react-router-dom';
+
 import { GiAbstract065 } from 'react-icons/gi';
 import Cartwidget from '../cartwidget/Cartwidget';
-
-
-
 
 export default function Navbar({cartCounter}) {
 
     return(
-        <div className="bg-purple-500 shadow-md w-full h-16 flex flex-row items-center justify-between">
+        <NavLink to={"/"} className="bg-purple-500 shadow-md w-full h-16 flex flex-row items-center justify-between">
 
             <div className="px-20 text-3xl flex flex-row cursor-pointer">
                 <GiAbstract065/>
@@ -23,7 +22,7 @@ export default function Navbar({cartCounter}) {
                 </button>
             </div>
 
-        </div>
+        </NavLink>
     );
 }
 

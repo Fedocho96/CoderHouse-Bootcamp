@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
-/* ------------ Components ---------- */
-import ItemListContainer from "./components/itemlistcontainer/ItemListContainer";
-import Navbar from "./components/Navbar/Navbar";
-import Sidebar from "./components/sidebar/Sidebar";
-import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer';
+/* ------------ Views ---------- */
+import Category from './views/Category/Category';
+import Detail from './views/Detail/Detail';
+import Products from './views/Products/Products';
 /* ------------ xxxxxxxxxx ---------- */
 
 
@@ -21,26 +21,13 @@ function App() {
 
 
   return (
-    <div>
-
-      <Navbar cartCounter={cartCounter}/>
-
-      <div className="grid grid-cols-4 max-h-full ">
-        <div className="col-span-1 mt-10">
-           <Sidebar/>
-        </div>
-
-        <div className="col-span-3 mt-10">
-          <ItemListContainer manageCart={manageCart} stock={stock} />
-        </div>
-
-      </div>
-
-      <div>
-        <ItemDetailContainer/>
-      </div>
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Products/>}/>
+        <Route exact path="/item/:id" element={<Detail/>}/>
+        <Route exact path="/category/:id" element={<Category/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
