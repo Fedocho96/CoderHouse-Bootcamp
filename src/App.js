@@ -1,24 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 /* ------------ Views ---------- */
 import Category from './views/Category/Category';
 import Detail from './views/Detail/Detail';
 import Products from './views/Products/Products';
+import Cart from './views/Cart/Cart'
 /* ------------ xxxxxxxxxx ---------- */
 
 
 
 
 function App() { 
-  const [cartCounter, setCardCounter] = useState(0)
-  const [stock, setStock] = useState(20)
-
-  const manageCart = (value) =>{
-      setCardCounter(cartCounter + value)
-      setStock(stock - value)
-  }
-
 
   return (
     <BrowserRouter>
@@ -26,6 +19,7 @@ function App() {
         <Route exact path="/" element={<Products/>}/>
         <Route exact path="/item/:id" element={<Detail/>}/>
         <Route exact path="/category/:id" element={<Category/>} />
+        <Route exact path="/cart" element={<Cart/>} />
       </Routes>
     </BrowserRouter>
   );
