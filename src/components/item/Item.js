@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Itemcount from '../itemcount/Itemcount'
 
 const Item = ({manageCart, stock, producto}) => {
   return (
@@ -12,7 +11,6 @@ const Item = ({manageCart, stock, producto}) => {
            <div className='truncate text-ellipsis'>{producto.description}</div>
             <button className='bg-slate-300 hover:bg-slate-400 rounded text-justify text-sm'>Ver mas detalles </button>
             <div className=' text-2xl'>${producto.price}</div>
-            <Itemcount manageCart={manageCart} stock={stock}/>
           </div>
         </NavLink>
       </>

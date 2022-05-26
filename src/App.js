@@ -8,6 +8,8 @@ import Products from './views/Products/Products';
 import Cart from './views/Cart/Cart'
 /* ------------ xxxxxxxxxx ---------- */
 
+import { CartProvider } from './Context/CartContext';
+
 
 
 
@@ -15,12 +17,14 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Products/>}/>
-        <Route exact path="/item/:id" element={<Detail/>}/>
-        <Route exact path="/category/:id" element={<Category/>} />
-        <Route exact path="/cart" element={<Cart/>} />
-      </Routes>
+      <CartProvider>
+        <Routes>
+         <Route exact path="/" element={<Products/>}/>
+         <Route exact path="/item/:id" element={<Detail/>}/>
+         <Route exact path="/category/:id" element={<Category/>} />
+         <Route exact path="/cart" element={<Cart/>} />
+       </Routes>
+      </CartProvider>
     </BrowserRouter>
   );
 }

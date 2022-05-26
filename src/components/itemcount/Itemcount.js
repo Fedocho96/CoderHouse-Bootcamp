@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 
-const Itemcount = ({ManageAmount}) => {
-    const [count, setCount] = useState(1)
+
+
+const Itemcount = ({count, setCount, onSubmit}) => {
 
     const handlecount = (value) => {
         if(value === "+"){
@@ -16,12 +17,12 @@ const Itemcount = ({ManageAmount}) => {
 
   return (
     <div className='flex gap-5'>
-        <button onClick={()=>{handlecount("-")}} >-</button>
-        <div>{count}</div>
-        <button onClick={()=>{handlecount("+")}}>+</button>
-        <button onClick={()=>{ManageAmount(count)}}>Añadir al carrito</button>
+    <button onClick={()=>{handlecount("-")}} >-</button>
+    <div>{count}</div>
+    <button onClick={()=>{handlecount("+")}}>+</button>
+    <button onClick={()=>onSubmit(count)}>Añadir al carrito</button>
 
-    </div>
+</div>
   )
 }
 

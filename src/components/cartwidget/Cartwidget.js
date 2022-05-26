@@ -1,19 +1,22 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 import { ImCart } from 'react-icons/im';
 
+import { CartContext } from '../../Context/CartContext';
 
-const Cartwidget = ({cartCounter}) => {
+
+const Cartwidget = () => {
+  const {cart} = React.useContext(CartContext)
   return (
-    <div>
+    <NavLink to={"/cart"}>
         <button className=' flex gap-1 cursor-pointer hover:text-slate-900'>
-            {cartCounter}
+          <span >
+            {cart.length}
+          </span>
             <ImCart/>
-            <div>
-
-            </div>
         </button>
-    </div>
+    </NavLink>
   )
 }
 
