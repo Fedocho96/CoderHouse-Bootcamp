@@ -5,7 +5,9 @@ const Item = ({manageCart, stock, producto}) => {
   return (
       <>
         <NavLink to={`/item/${producto.id}`} className=' h-auto grid grid-cols-3 border-2 border-purple-600'>
-          <img src={producto.pictureUrl} className=" h-fit max-h-48 min-h-min"/>
+          <div className=' h-auto w-auto'>
+          <img src={producto.pictureUrl} className="h-fit max-h-48 min-h-min"/>
+          </div>
           <div className='grid col-span-2'>
            <div className=' text-2xl text-center mb-1'>{producto.title}</div>
            <div className='truncate text-ellipsis'>{producto.description}</div>
