@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import {getFirestore, doc, getDoc} from 'firebase/firestore'
 
 import ItemDetail from '../itemDetail/ItemDetail'
 
 const ItemDetailContainer = ({id}) => {
   const [product, setProduct] = useState([])
+  console.log(id)
 
-
+  /*
   const getItem = ()=>{
     axios
       .get('https://apimocha.com/listproduct/products')
@@ -17,6 +19,15 @@ const ItemDetailContainer = ({id}) => {
   useEffect(()=>{
     getItem()
 }, [])
+*/
+
+useEffect(() => {
+  const db = getFirestore()
+  const productRef = doc(db, "productos", id)
+  getDoc(productRef).then((snapshot) => {
+    setProduct({id: snapshot.id, ...snapshot.data()})
+  })
+}, [id])
 
 
   return (
