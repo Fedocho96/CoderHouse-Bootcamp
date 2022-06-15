@@ -15,6 +15,11 @@ const ItemCartContainer = () => {
         <h1> Vaciar Carrito</h1>
       </button>
         {cart.map(item => <CartItem key={item.id} item={item} addToCart={addToCart} removeFromCart={removeFromCart} deleteAll={deleteAll}/>)}
+        <NavLink to='/checkout'>
+            <button className='flex justify-center items-center'>
+                <h1> Finalizar Compra</h1>
+            </button>
+        </NavLink>
     </div>
   ) : ( 
     <div>

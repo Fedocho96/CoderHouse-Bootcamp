@@ -6,6 +6,7 @@ import Category from './views/Category/Category';
 import Detail from './views/Detail/Detail';
 import Products from './views/Products/Products';
 import Cart from './views/Cart/Cart'
+import CheckoutView from './views/Checkout/CheckoutView';
 /* ------------ xxxxxxxxxx ---------- */
 
 import { CartProvider } from './Context/CartContext';
@@ -23,6 +24,7 @@ function App() {
          <Route exact path="/item/:id" element={<Detail/>}/>
          <Route exact path="/category/:id" element={<Category/>} />
          <Route exact path="/cart" element={<Cart/>} />
+         <Route exact path="/checkout" element={<CheckoutView/>} />
        </Routes>
       </CartProvider>
     </BrowserRouter>
