@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import { useParams } from 'react-router-dom';
+import ImgCarousel from '../../components/carousel/ImgCarousel';
+import Footer from '../../components/footer/Footer';
 
 /* ------------ Components ---------- */
 import ItemDetailContainer from '../../components/itemDetailContainer/ItemDetailContainer';
@@ -21,12 +23,20 @@ function Detail() {
 
 
   return (
-    <div>
+    <div className=' bg-color3 min-h-screen '>
 
       <Navbar cartCounter={cartCounter}/>
 
-      <div>
+      <div className='xl:mx-72'>
+        <ImgCarousel/>
+      </div>
+
+      <div className='xl:mx-72'>
         <ItemDetailContainer id={id}/>
+      </div>
+
+      <div className=' object-bottom'>
+        <Footer/>
       </div>
 
     </div>

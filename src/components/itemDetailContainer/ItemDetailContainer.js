@@ -31,7 +31,7 @@ useEffect(() => {
 
 
   return (
-    <div className=' border-red-600 border-2 h-full'>
+    <div className=' rounded-md shadow-xl bg-color4 m-2 p-2'>
       <ItemDetail product={product}/>
     </div>
   )
