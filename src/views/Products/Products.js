@@ -32,8 +32,8 @@ function Products() {
 
       <div className= ' xl:mx-72'>
 
-        <div className="grid grid-cols-4 max-h-full ">
-          <div className=" bg-color4 h-fit col-span-1 mx-5 pb-10 py-2 border-0 rounded-md">
+        <div className="grid grid-cols-4 max-h-full">
+          <div className=" bg-color4 h-fit w-full col-span-1 mx-5 pb-10 py-2 border-0 rounded-md">
             <Sidebar/>
           </div>
 

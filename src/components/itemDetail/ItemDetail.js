@@ -20,7 +20,7 @@ const ItemDetail = ({product}) => {
 
   return (
     <div>
-      <div className='grid grid-cols-4 gap-1 justify-evenly items-center h-128 '>
+      <div className='grid grid-cols-4 gap-1 justify-evenly items-center h-fit w-fit '>
 
             <img alt= "" src={product.pictureUrl} className=' h-auto w-auto col-span-2' />
 
@@ -51,7 +51,9 @@ const ItemDetail = ({product}) => {
                 Ir al Carrito
                 </NavLink>
             ) : (
-              <Itemcount count={count} setCount={setCount} onSubmit={()=>addToCart(product, count)}/>
+              <div className=' w-full'> 
+                <Itemcount count={count} setCount={setCount} onSubmit={()=>addToCart(product, count)}/>
+              </div>
             )}
           </div>   
       </div>

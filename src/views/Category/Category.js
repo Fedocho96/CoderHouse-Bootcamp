@@ -21,29 +21,28 @@ const Category = () => {
 
   }
   return (
-    <div className='bg-color3'>
+    <div className='bg-color3 min-h-screen flex flex-col flex-auto max-h-max'>
 
     <Navbar cartCounter={cartCounter}/>
 
     <div className='xl:mx-72'>
         <ImgCarousel/>
-     </div>
+    </div>
 
-    <div className='xl:mx-72'>
+    <div className= ' xl:mx-72'>
 
-    <div className="grid grid-cols-4 max-h-full ">
-
-       <div className="bg-color4 h-fit col-span-1 mx-5 pb-10 py-2 border-0 rounded-md">
-           <Sidebar/>
+      <div className="grid grid-cols-4 max-h-full h-screen">
+        <div className=" bg-color4 h-fit w-full col-span-1 mx-5 pb-10 py-2 border-0 rounded-md">
+          <Sidebar/>
         </div>
 
-        <div className="col-span-3 mx-5 pr-4 pb-4 border-0 rounded-md">
+        <div className=" col-span-3 mx-5 pr-4 pb-4 border-0 rounded-md">
           <ItemListContainer manageCart={manageCart} stock={stock} id={id} />
         </div>
 
       </div>
 
-    </div>  
+    </div>
     
       <Footer/>
 

@@ -18,10 +18,12 @@ const ItemCartContainer = () => {
 
         {/* ------------------------- xxxx metodo envio xxxx ------------------------- */}
  
-        <div className=' items-center h-40 flex m-2 shadow-lg  rounded-sm'>
+        <div className=' items-center h-40 flex m-2 shadow-lg  rounded-sm bg-color3'>
 
 
         <div className=' bg-color1 w-2 h-full rounded-l-md'></div>
+
+        <img src='https://i.pinimg.com/originals/2e/f2/f3/2ef2f3289430a49cfbd483bf44dd2f17.jpg' className=' h-full w-44 pl-2'/>
 
         <div className=' grid grid-cols-4 h-full p-2 w-full  items-center'>
           
@@ -58,8 +60,8 @@ const ItemCartContainer = () => {
         </NavLink>
     </div>
   ) : ( 
-    <div>
-      <NavLink to={"/"} className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'>
+    <div className=' md:mx-0 sm:mx-0 h-screen'>
+      <NavLink to={"/"} className='bg-color1 text-color3 font-bold py-2 px-4 rounded m-3 w-fit h-10 shadow-xl hover:text-color3 ring ring-color3 hover:ring-color1'>
           Comienza a llenar tu carrito
       </NavLink>
     </div>

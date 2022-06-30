@@ -23,7 +23,7 @@ function Detail() {
 
 
   return (
-    <div className=' bg-color3 min-h-screen '>
+    <div className=' bg-color3 min-h-screen flex flex-col flex-auto max-h-max'>
 
       <Navbar cartCounter={cartCounter}/>
 
@@ -31,7 +31,7 @@ function Detail() {
         <ImgCarousel/>
       </div>
 
-      <div className='xl:mx-72'>
+      <div className='my-4 flex flex-auto justify-center  h-fit xl:mx-72  rounded-md'>
         <ItemDetailContainer id={id}/>
       </div>
 
