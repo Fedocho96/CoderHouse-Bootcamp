@@ -1,7 +1,36 @@
-Proyecto E-commerce para CoderHouse
+# Mi proyecto de CoderHouse
 
-Tecnologias: HTML, CSS, Javacsript, React.js, Tailwind.css, Axios
+Proyecto final para el bootcamb de React en CoderHouse
 
-Este E-commerce cuenta con una api traida desde ApiMocha, la cual contiene los productos utilizados.
+## Gif de demostración
 
-Funcionalidades: Incluye una barra de navegación con carrito de compras, barra lateral con sistema de filtrado por categorias de producto, catalogo de productos con sus respectivos items y Sección de detalle de producto
+ ![CoderProject](https://user-images.githubusercontent.com/73982324/176578734-e1e0474f-26ac-4ef4-960b-e82929f79399.gif)
+
+## Deploy
+
+Puedes ver el proyecto deployado en vercel : [Link](https://coder-house-bootcamp.vercel.app/).
+
+## Instalación
+```bash
+npm install
+```
+
+## Inicializar el proyecto
+
+```bash
+npm start
+```
+
+## Librerias Utilizadas
+Para el proyecto se utilizaron las siguientes librerias:
+
+. React
+
+. Node.js
+
+. React Bootstrap : Se utilizó para el slider de imagenes
+
+. Tailwind.css
+
+Este ultimo se utilizó debido a la simplicidad de uso que nos aporta para dar un estilado a nuestro proyecto.
+
