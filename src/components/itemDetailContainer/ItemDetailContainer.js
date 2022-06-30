@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 
 const ItemDetailContainer = ({id}) => {
   const [product, setProduct] = useState([])
-  console.log(id)
+ 
 
   /*
   const getItem = ()=>{

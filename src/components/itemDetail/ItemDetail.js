@@ -16,7 +16,7 @@ const ItemDetail = ({product}) => {
   const {addToCart, isInCart} = React.useContext(CartContext)
 
   const [count, setCount] = useState(1)
-  console.log(product)
+  
 
   return (
     <div>
