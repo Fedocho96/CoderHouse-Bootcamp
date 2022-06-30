@@ -4,7 +4,7 @@ Proyecto final para el bootcamb de React en CoderHouse
 
 ## Gif de demostración
 
-  ![Gif](https://drive.google.com/drive/u/1/folders/1OR6T4O0_8oWzJRZCiZh-770V_YQ-0KQE)
+ ![CoderProject](https://user-images.githubusercontent.com/73982324/176578734-e1e0474f-26ac-4ef4-960b-e82929f79399.gif)
 
 ## Deploy
 
@@ -33,3 +33,4 @@ Para el proyecto se utilizaron las siguientes librerias:
 . Tailwind.css
 
 Este ultimo se utilizó debido a la simplicidad de uso que nos aporta para dar un estilado a nuestro proyecto.
+
